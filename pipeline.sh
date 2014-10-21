@@ -19,5 +19,5 @@ do
 	mv $f ${f/txt/csv} #indentation is not necessary but helps easy reading
 done
 
-echo Available files
+echo Available csv files
 ls *.csv
