@@ -7,5 +7,7 @@ data = pd.read_csv(filename)
 
 print data.head()
 
+data["temperature"] = mosquito_lib.fahr_to_celsius(data["temperature"]) #temperature conversion
+
 parameters = mosquito_lib.analyze(data)
 print parameters
