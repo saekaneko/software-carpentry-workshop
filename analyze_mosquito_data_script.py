@@ -10,4 +10,6 @@ print data.head()
 data["temperature"] = mosquito_lib.fahr_to_celsius(data["temperature"]) #temperature conversion
 
 parameters = mosquito_lib.analyze(data)
+parameters.to_csv("paramters.csv")
+
 print parameters
